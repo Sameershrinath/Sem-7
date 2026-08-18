@@ -1,0 +1,7 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Enter Your birth Year" name="dob" value={dob} onchange={setDob}>   </lightning-input>
+        <lightning-button label="Submit" onclick={calculateAge}></lightning-button>
+            <p>The age of the person is {age} .</p>
+    </lightning-card>
+</template>

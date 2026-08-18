@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="hello binding" icon-name="custom:custom14"> 
+
+        <p>Hello,{greeting}! You can join on {date} Nov</p>
+        <lightning-input label="Name" value={greeting} onchange={handleChange}></lightning-input>
+        <lightning-button label="Increase Date" value={date}  onclick={increaseDate}></lightning-button>
+        <lightning-button label="Decrease Date" value={date} onclick={decreaseDate}></lightning-button>
+
+    </lightning-card>
+</template>

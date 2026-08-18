@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <lightning-input type="toggle" label="Show Child Component" checked={showChild} onchange={handleToggle}>
+        </lightning-input>
+
+        <template if:true={showChild}>
+            <lightning-card title="Lifecycle Demo">
+                <p>Check Console for Logs</p>
+                <c-lifecycle-Hook-child></c-lifecycle-Hook-child>
+            </lightning-card>
+        </template>
+    </lightning-card>
+</template>

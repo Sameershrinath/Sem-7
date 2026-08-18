@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Account Details using Wire">
+        <div class="slds-p-around_medium">
+        <template if:true ={account}>
+            <p><strong>>Name:</strong> {account.Name}</p>
+            <p><strong>>Industry:</strong> {account.Industry}</p>
+            <p><strong>>Phone:</strong> {account.Phone}</p>
+        </template>
+
+        <template if:true="{error}">
+            <p>Error loading account</p>
+        </template>
+</div>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Practice Loop">
+        <lightning-button label="Click to print Number" onclick={handleClick}>
+        </lightning-button>
+         <lightning-button label="Click to remove Number" onclick={handleClickRemove}>
+        </lightning-button>
+
+        <template lwc:if={nums}>
+            <template for:each={nums} for:item="num">
+                <p key={num}>{num}</p>
+            </template>
+        </template>
+        <template lwc:else>
+            <p>No numbers to display</p>
+        </template>
+    </lightning-card>
+</template>
