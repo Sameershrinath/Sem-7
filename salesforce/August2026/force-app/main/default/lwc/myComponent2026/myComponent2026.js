@@ -2,7 +2,8 @@ import { LightningElement } from 'lwc';
 
 export default class MyComponent2026 extends LightningElement {
 
-    var name="Sameer shrinath";
-    var class=8;
-    var sid=23457;
+    name="Sameer shrinath";
+    className=8;
+    sid=23457;
+    designation='student';
 }

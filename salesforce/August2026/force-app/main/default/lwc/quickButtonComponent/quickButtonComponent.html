@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Quick Button Component">
+        <div  class="slds-p-around_large">
+        <p>Hello my name is {info.name}.</p>
+        <p>My class is {anotherinfo.className}.</p>
+
+        <lightning-button
+            label="Change Name"
+            onclick={changeName}>
+        </lightning-button>
+
+        <lightning-button
+            label="Change Class"
+            onclick={changeClass}>
+        </lightning-button>
+
+        <div class="slds-grid">
+            <div class="slds-col">This is col 1</div>
+            <div class="slds-col">This is col 2</div>
+        </div>
+
+         <div class="slds-grid">
+            <div class="slds-col "><lightning-button label="Danger" variant="destructive"></lightning-button></div>
+            <div class="slds-col"><lightning-button label="neutral" variant="neutral"></lightning-button></div>
+            <div class="slds-col"><lightning-button label="success" variant="success"></lightning-button></div>
+            <div class="slds-col"><lightning-button label="brand" variant="brand"></lightning-button></div>
+        </div>
+    
+        <p>Hello,  {personName} .</p>
+
+        <lightning-input value={personName} onchange={personNameUpdate}></lightning-input>
+
+</div>
+    </lightning-card>
+</template>
