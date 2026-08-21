@@ -25,11 +25,28 @@
             <div class="slds-col"><lightning-button label="success" variant="success"></lightning-button></div>
             <div class="slds-col"><lightning-button label="brand" variant="brand"></lightning-button></div>
         </div>
-    
+            <hr><p>project 2done</p><hr>
+
         <p>Hello,  {personName} .</p>
 
         <lightning-input value={personName} onchange={personNameUpdate}></lightning-input>
 
-</div>
+        <hr><p>project 3 done</p><hr>
+
+
+        <lightning-input label="Enter billing Address" value={billingAddress} onchange={updatebillingAddress}></lightning-input>
+        <lightning-button variant={normal} label="Copy billing Address to mailing address" onclick={copybillingAddressToMaillingAddress}></lightning-button>
+        <lightning-input label="Mailling address" value={mailingAddress}></lightning-input>
+        
+        <hr><p>project 4 </p><hr>
+        <lightning-input label="Enter Feet" value={feet} onchange={assignFeet}></lightning-input>
+        
+        <lightning-button variant={normal} label='Convert to Inches' onclick={feetToInches}></lightning-button>
+        <p><lightning-badge label={inches}></lightning-badge></p>
+        <hr><p>project 5 </p><hr>
+
+
+    
+    </div>
     </lightning-card>
 </template>

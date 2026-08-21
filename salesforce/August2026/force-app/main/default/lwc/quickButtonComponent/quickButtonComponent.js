@@ -23,4 +23,29 @@ export default class QuickButtonComponent extends LightningElement {
     personNameUpdate(event){
         this.personName=event.target.value;
     }
+
+
+//Requirement 3
+billingAddress='';
+mailingAddress=''
+
+updatebillingAddress(event){
+    this.billingAddress=event.target.value;
+}
+copybillingAddressToMaillingAddress(){
+    this.mailingAddress=this.billingAddress;
+}
+
+//Requirement 4
+inches=0;
+feet=0;
+
+assignFeet(event){
+    this.feet=event.target.value;
+}
+feetToInches(){
+this.inches=this.feet*12;
+}
+
+
 }
